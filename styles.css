@@ -1,0 +1,17 @@
+.container {
+   display: grid; 
+   grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+    border: 1px solid black;
+    grid-row: 1 / 3;
+}
+
+.header {
+    border: 1px solid black;
+}
+
+.main-content {
+    border: 1px solid black;
+}
