@@ -6,7 +6,7 @@ body {
 
 .container {
    display: grid; 
-   grid-template-columns: 1fr 3fr;
+   grid-template-columns: 1fr 4fr;
    grid-template-rows: 210px max-content;
    row-gap: 5px;
 }
@@ -73,7 +73,7 @@ a {
 
 .header input {
     height: 30px;
-    width: max(90%, 200px);
+    width: max(90%, 300px);
     border-radius: 15px;
     border: none;
     background-color: #e5e7eb;
@@ -146,5 +146,66 @@ a {
 
  .main-content {
     background-color: #e5e7eb;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
  }
+
+ .projects > div:first-child {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 900;
+ }
+
+ .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+ }
+
+ .card {
+    background-color: white;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 7px 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+ }
+
+ .card-title {
+    grid-column: 2 / 4;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 900;
+ }
+
+ .card-content {
+    grid-column: 2 / 4;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #737373;
+ }
+
+ .card-buttons {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 20px;
+ }
+
+ .stripe {
+    grid-row: 1 / 4;
+    border-radius: 7px 0 0 7px;
+    background-color: #fbbf24;
+ }
+
+ .card img {
+    width: 25px;
+ }
+
 
