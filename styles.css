@@ -148,8 +148,9 @@ a {
     background-color: #e5e7eb;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 20px;
+    gap: 20px;
  }
 
  .projects > div:first-child {
@@ -206,6 +207,43 @@ a {
 
  .card img {
     width: 25px;
+ }
+
+ .extra-info {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    gap: 20px;
+ }
+
+ .announcements > div:first-child {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+ }
+
+ .announcement-board {
+    background-color: white;
+    padding: 40px 40px;
+    border-radius: 7px;
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content max-content;
+    gap: 10px;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+ }
+
+ .announcement-board hr {
+    border: 0.5px solid #d4d4d8;
+    width: 100%;
+ }
+
+ .announcement-item > div:first-child {
+    font-weight: 20px;
+    font-weight: 900;
+ }
+
+ .announcement-item > div:nth-child(2) {
+    color: #737373;
+    font-size: 14px;
  }
 
 
